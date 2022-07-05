@@ -177,7 +177,8 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
                     if save_img or save_crop or view_img:  # Add bbox to image
                         c = int(cls)  # integer class
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
-                        if ('plastic' in names[c]):
+			#※JetsonNano -> STM board serial communication. Send char parameter. like '1', '2', '3'
+                        if ('plastic' in names[c]): 
                             val1 ='1'
                             val1 = val1.encode('utf-8') 
                             print("플라스틱 검출")
