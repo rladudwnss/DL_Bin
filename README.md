@@ -1,4 +1,4 @@
-# DL_Bin
+#Smart recycling bins with YoloV5 
 Smart recycling bins with YoloV5
 딥러닝을 활용한 스마트 쓰레기통. (YoloV5)
 
